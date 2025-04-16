@@ -34,7 +34,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
-    "typeorm": "typeorm-ts-node-commonjs"
+    "typeorm": "typeorm-ts-node-commonjs",
+    "migration:run": "yarn typeorm migration:run -d src/ormconfig.ts"
   },
   "devDependencies": {
     "@nestjs/platform-express": "^11.0.17",
