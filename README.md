@@ -84,7 +84,7 @@ A API estará disponível em `http://localhost`.
 2. Suba o PostgreSQL e Redis (pode usar Docker para isso).
 3. Rode as migrations:
    ```bash
-   yarn typeorm migration:run
+   yarn migration:run
    ```
 4. Inicie a aplicação:
    ```bash
