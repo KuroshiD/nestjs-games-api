@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "ES2021",
+        "lib": [
+            "ES2021",
+            "DOM"
+        ],
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "resolveJsonModule": true,
+        "baseUrl": "./",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "sourceMap": true,
+        "incremental": true,
+        "paths": {
+            "@modules/*": [
+                "src/modules/*"
+            ],
+            "@config/*": [
+                "src/config/*"
+            ],
+            "@shared/*": [
+                "src/shared/*"
+            ],
+            "@entities/*": [
+                "src/database/entities/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

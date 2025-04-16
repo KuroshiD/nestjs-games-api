@@ -1,0 +1,19 @@
+FROM node:23-slim
+
+WORKDIR /usr/src/app
+
+COPY package.json yarn.lock ./
+
+RUN yarn install
+
+RUN yarn global add @nestjs/cli
+
+COPY . .
+
+RUN yarn build
+
+RUN npm rebuild bcrypt --update-binary
+
+EXPOSE 3000
+
+CMD ["yarn", "start:dev"]
